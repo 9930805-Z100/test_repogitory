@@ -1,8 +1,8 @@
 name: Self-hosted test
-on: workflow_dispatch
-
+on:
+  push:
 jobs:
   test:
     runs-on: self-hosted
     steps:
-      - run: echo "Self-hosted runner is working!"
+      - run: echo "Runner is working!"
